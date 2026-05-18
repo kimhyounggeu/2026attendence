@@ -233,7 +233,7 @@
       render();
 
       try {
-        const url = `${SCRIPT_URL}?action=check&id=${encodeURIComponent(id)}&name=${encodeURIComponent(name)}`;
+        const url = `${SCRIPT_URL}?action=check&sid=${encodeURIComponent(id)}&name=${encodeURIComponent(name)}`;
         const res  = await fetch(url, { redirect: "follow" });
         const data = await res.json();
 
